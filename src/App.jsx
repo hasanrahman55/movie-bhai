@@ -1,7 +1,20 @@
+import { Route, Routes } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import { MovieProvider } from "./contexts/MovieContexts";
+import Home from "./pages/Home";
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <MovieProvider>
+        <NavBar />
+        <main className="flex-1 p-8 w-full flex flex-col">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/favorites" />
+          </Routes>
+        </main>
+      </MovieProvider>
     </>
   );
 }
