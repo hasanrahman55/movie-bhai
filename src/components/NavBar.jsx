@@ -5,7 +5,7 @@ function NavBar() {
     <nav className="bg-black p-4 md:p-6 flex justify-between items-center shadow-md">
       <div className="text-xl md:text-2xl font-bold">
         <Link to="/" className="text-white">
-          Movie App
+          Movie Bhai
         </Link>
       </div>
       <div className="flex gap-4 md:gap-8">
